@@ -26,7 +26,7 @@ def dia_prediction(input_data):
         return 'The person is diabetic'
 
 
-def breastcancer_prediction (input_data):
+def bre_prediction (input_data):
     my_df = pd.DataFrame([input_data])
     minmaxdata = [[32.0,0.0,0.0,83.5,48.0,113.0,0.0,0.0,40.0,0.0],[70.0,1.0,70.0,295.0,142.5,464.0,1.0,1.0,394.0,1.0]]
     minmaxdata_df = pd.DataFrame(minmaxdata)
@@ -42,7 +42,7 @@ def breastcancer_prediction (input_data):
     else:
         return "The patient will not develop a Heart Disease."
 
-def parkinsons_prediction (input_data):
+def par_prediction (input_data):
     my_df = pd.DataFrame([input_data])
     minmaxdata = [[32.0,0.0,0.0,83.5,48.0,113.0,0.0,0.0,40.0,0.0],[70.0,1.0,70.0,295.0,142.5,464.0,1.0,1.0,394.0,1.0]]
     minmaxdata_df = pd.DataFrame(minmaxdata)

@@ -19,15 +19,17 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
         
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-          <!-- Template Main CSS File -->
-        <link rel="stylesheet" href="static/css/style.css">
+        
     
         <script src="https://kit.fontawesome.com/8fd469937f.js" crossorigin="anonymous"></script>
     
         <!-- <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script> -->
     
         <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.1/dist/iconify-icon.min.js"></script>
-    </head>
+    
+        <link rel="stylesheet" href="{{url_for('static', filename = 'css/style.css')}}">
+
+      </head>
 
 <body>
 
@@ -65,7 +67,6 @@
           <li class="dropdown"><a href="#"><span>Medical Condition</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="#">Coronary heart disease</a></li>
-             
               <!-- <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
                   <li><a href="#">Deep Drop Down 1</a></li>
@@ -117,8 +118,7 @@
       <div class="container">
 
         <div class="section-title">
-          
-          <h2>DIABETES PREDITCION</h2>
+          <h2>CHD PREDICTION</h2>
           <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
 
@@ -147,19 +147,19 @@
           <div class="row">
             <div class="col-md-4 form-group mt-3 ">
               <div class="input-tab">
-              <input class="input-field form-control" type="text" id="name" name="sex" placeholder="sex" required autofocus></div>
+              <input class="input-field form-control" type="text" id="name" name="preg" placeholder="Pregnancies" required autofocus></div>
               <div class="validate"></div>
             </div>
 
             <div class="col-md-4 form-group mt-3  ">
               <div class="input-tab">
-              <input class="input-field form-control" type="text" id="email" name="cig" placeholder="cigerete per day " required></div>
+              <input class="input-field form-control" type="text" id="email" name="gluc" placeholder="Glucose Level" required></div>
               <div class="validate"></div>
             </div>
 
             <div class="col-md-4 form-group mt-3">
               <div class="input-tab">
-              <input class="input-field form-control" type="text" id="number" name="sysBP"  placeholder="sysBP" required></div>
+              <input class="input-field form-control" type="text" id="number" name="bp"  placeholder="BloodPressure" required></div>
               <div class="validate"></div>
             </div>
 
@@ -170,39 +170,28 @@
           <div class="row">
             <div class="col-md-4 form-group mt-3 ">
               <div class="input-tab">
-              <input class="input-field form-control" type="text" id="name" name="totChol" placeholder="Total Cholesterol" required autofocus></div>
+              <input class="input-field form-control" type="text" id="name" name="skin" placeholder="SkinThickness" required autofocus></div>
               <div class="validate"></div>
             </div>
 
             <div class="col-md-4 form-group  mt-3 ">
               <div class="input-tab">
-              <input class="input-field form-control" type="text" id="email" name="hyp" placeholder="Hypertensive " required></div>
+              <input class="input-field form-control" type="text" id="email" name="insu" placeholder="Insulin" required></div>
               <div class="validate"></div>
             </div>
 
             <div class="col-md-4 form-group mt-3 ">
               <div class="input-tab">
-              <input class="input-field form-control" type="text" id="number" name="dia"  placeholder="Diabetes" required></div>
+              <input class="input-field form-control" type="text" id="number" name="bmi"  placeholder="BMI" required></div>
               <div class="validate"></div>
             </div>
 
           </div>
           <div class="row">
-            <div class="col-md-4 form-group mt-3">
+          <div class="col-md-4 form-group mt-3">
             <div class="input-tab">
-            <input class="input-field form-control" type="text" id="number" name="glucose"  placeholder="Glucose Level" required></div>
+            <input class="input-field form-control" type="text" id="number" name="diapred"  placeholder="DiabetesPedigreeFunction" required></div>
             <div class="validate"></div>
-            </div>
-            <div class="col-md-4 form-group mt-3">
-            <div class="input-tab">
-            <input class="input-field form-control" type="text" id="number" name="bloodpre"  placeholder="Blood Pressure" required></div>
-            <div class="validate"></div>
-            </div>
-            <div class="col-md-4 form-group mt-3">
-            <div class="input-tab">
-            <input class="input-field form-control" type="text" id="number" name="diaBP"  placeholder="diaBP" required></div>
-            <div class="validate"></div>
-            </div>
           </div>
 
          <!-- <div class="labels">
@@ -263,9 +252,9 @@
 <!-- End Appointment Section -->
   </main><!-- End #main -->
 
-   <!-- footer -->
+  <!-- footer -->
 
-   <footer class="text-center text-white" style="background-color: #f1f1f1;">
+  <footer class="text-center text-white" style="background-color: #f1f1f1;">
     <!-- Grid container -->
     <div class="container pt-4">
       <!-- Section: Social media -->
@@ -342,7 +331,8 @@
 
   <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-<script src="static/js/main.js"></script>
+<script type="text/javascript" src="{{url_for('static', filename = 'js/main.js')}}"></script>
+
 </body>
 
 </html>

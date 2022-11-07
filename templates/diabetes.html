@@ -19,15 +19,17 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
         
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-          <!-- Template Main CSS File -->
-        <link rel="stylesheet" href="static/css/style.css">
+        
     
         <script src="https://kit.fontawesome.com/8fd469937f.js" crossorigin="anonymous"></script>
     
         <!-- <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script> -->
     
         <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.1/dist/iconify-icon.min.js"></script>
-    </head>
+    
+        <link rel="stylesheet" href="{{url_for('static', filename = 'css/style.css')}}">
+
+      </head>
 
 <body>
 
@@ -116,11 +118,11 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Breast Cancer Prediction</h2>
+          <h2>DIABETES PREDICTION</h2>
           <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
 
-        <form action="/submit" id="survey-form" method="POST" >
+        <form action="/submitdia" id="survey-form" method="POST" >
           <div class="row">
             <div class="col-md-4 form-group ">
               <div class="input-tab ">
@@ -329,7 +331,7 @@
 
   <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-<script src="static/js/main.js"></script>
+<script type="text/javascript" src="{{url_for('static', filename = 'js/main.js')}}"></script>
 
 </body>
 
