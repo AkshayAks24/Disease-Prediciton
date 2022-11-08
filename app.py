@@ -22,9 +22,9 @@ def parkinsons():
 def breastcancer():
     return render_template('breastcancer.html')
 
-@app.route('/result/<str>')
-def result(str):
-    return render_template('result.html', status = str)
+# @app.route('/result/<str>')
+# def result(str):
+#     return render_template('result.html', status = str)
 
 
 
@@ -41,7 +41,7 @@ def submitdia():
         bmi = float(request.form['bmi'])
         DiaPredFunc = float(request.form['diapred'])
         res = utill.dia_prediction([pregnancies,glucose,bloodPressure,skinThickness,insulin,bmi,DiaPredFunc,age])
-        return redirect(url_for("result", str = res ))   
+        return render_template("result.html", status = res )
 
 
 
@@ -64,7 +64,7 @@ def submitchd():
         glucose = float(request.form['glucose'])
         bloodpre = float(request.form['bloodpre'])
         res = utill.chd_prediction([age,sex,cig,sysBP,diaBP,totChol,hyp,dia,glucose,bloodpre])
-        return redirect(url_for("result", str = res ))
+        return render_template("result.html", status = res )
 
 @app.route('/submitpar',methods = [ 'POST','GET'])
 def submitpar():
@@ -80,7 +80,7 @@ def submitpar():
         glucose = float(request.form['glucose'])
         bloodpre = float(request.form['bloodpre'])
         res = utill.par_prediction([age,sex,cig,sysBP,diaBP,totChol,hyp,dia,glucose,bloodpre])
-        return redirect(url_for("result", str = res ))
+        return render_template("result.html", status = res )
 
 
 
@@ -98,7 +98,7 @@ def submitbre():
         glucose = float(request.form['glucose'])
         bloodpre = float(request.form['bloodpre'])
         res = utill.bre_prediction([age,sex,cig,sysBP,diaBP,totChol,hyp,dia,glucose,bloodpre])
-        return redirect(url_for("result", str = res ))
+        return render_template("result.html", status = res )
 
 
 

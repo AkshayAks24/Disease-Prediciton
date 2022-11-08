@@ -52,7 +52,7 @@
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo me-auto"><a href="index.html">Hygeia </a></h1>
+      <h1 class="logo me-auto"><a href="/">Hygeia </a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto"><img src="static/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -96,8 +96,11 @@
   <section id="hero" class="d-flex align-items-center">
     <div class="container">
       <h1>Welcome to Hygeia</h1>
-      <h2>Disease detection driven by artificial intelligence (AI)</h2>
-      <a href="#about" class="btn-get-started scrollto">Get Started</a>
+      <h2>AI Healthcare</h2>
+      <a href="#about" class="btn-get-started scrollto getstarted">Get Started</a>
+    </div>
+    <div class="pngimage ">
+      <img class="pngimg" src="static\img\digihealth.png" alt="">
     </div>
   </section>
   <!-- End Hero -->
@@ -121,26 +124,33 @@
         <div class="col-lg-8 d-flex align-items-stretch">
           <div class="icon-boxes d-flex flex-column justify-content-center">
             <div class="row">
-              <div class="col-xl-4 d-flex align-items-stretch">
-                <div class="icon-box mt-4 mt-xl-0">
-                  <i class="bi bi-heart-pulse"></i>
-                  <h4>Coronary heart disease</h4>
-                  <p> Estimating whether the patient has a 10 year risk of future CHD</p>
+                <div class="col-xl-4 d-flex align-items-stretch">
+                  <a class="diseasecard" href="chd.html"  >
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="bi bi-heart-pulse"></i>
+                    <h4>Coronary heart disease</h4>
+                    <p> Estimating whether the patient has a 10 year risk of future CHD</p>
+                  </div>
+                  </a>
                 </div>
-              </div>
+            
               <div class="col-xl-4 d-flex align-items-stretch">
+                <a class="diseasecard" href="parkinsons.html"  >
                 <div class="icon-box mt-4 mt-xl-0">
                   <i class="fas fa-brain"></i>
                   <h4>Parkinson's disease</h4>
                   <p> determining an individual's probability of developing Parkinson's disease</p>
                 </div>
+              </a>
               </div>
               <div class="col-xl-4 d-flex align-items-stretch">
+                <a href="breastcancer.html" class="diseasecard">
                 <div class="icon-box mt-4 mt-xl-0">
                   <i class="bi bi-clipboard2-pulse"></i>
                   <h4>Breast cancer </h4>
                   <p>helps with early diagnosis of breast cancer and determines the nature of the cancer by analysing the tumour size.</p>
                 </div>
+              </a>
               </div>
             </div>
           </div><!-- End .content-->
@@ -270,7 +280,7 @@
         <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
           <div class="icon-box">
             <div class="icon"><i class="bi bi-capsule-pill"></i></div>
-            <h4><a href="diabetespred.html">Diabetes Mellitus</a></h4>
+            <h4><a href="diabetes.html">Diabetes Mellitus</a></h4>
             <p>system which can perform early prediction of diabetes for a patient</p>
           </div>
         </div>
@@ -581,7 +591,7 @@
     <!-- Copyright -->
     <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
       © 2020 Copyright:
-      <a class="text-dark" href="https://mdbootstrap.com/">Hygeia.com</a>
+      <a class="text-dark" href="/">Hygeia.com</a>
     </div>
     <!-- Copyright -->
   </footer>
