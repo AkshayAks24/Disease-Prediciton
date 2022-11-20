@@ -64,6 +64,7 @@ def submitchd():
         glucose = float(request.form['glucose'])
         bloodpre = float(request.form['bloodpre'])
         res = utill.chd_prediction([age,sex,cig,sysBP,diaBP,totChol,hyp,dia,glucose,bloodpre])
+        print(sex)
         return render_template("result.html", status = res )
 
 @app.route('/submitpar',methods = [ 'POST','GET'])

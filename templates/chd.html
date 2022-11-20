@@ -112,21 +112,30 @@
 
         <form action="/submitchd" id="survey-form" method="POST" >
           <div class="row">
-            <div class="col-md-4 form-group ">
+            <div class="col-md-4 form-group mt-3">
               <div class="input-tab ">
               <input class="input-field form-control" type="text" id="name" name="name" placeholder="Your Name"  required autofocus></div>
               <div class="validate"></div>
             </div>
 
-            <div class="col-md-4 form-group mt-3 mt-md-0 ">
+            <div class="col-md-4 form-group mt-3">
               <div class="input-tab">
-              <input class="input-field form-control" type="text" id="email" name="glucose" placeholder="glucose level" required></div>
+              <input class="input-field form-control" type="number" id="number" name="age"  placeholder="Your Age" required></div>
               <div class="validate"></div>
             </div>
 
-            <div class="col-md-4 form-group mt-3 mt-md-0">
+            <!-- <div class="col-md-4 form-group mt-3 mt-md-0 ">
               <div class="input-tab">
-              <input class="input-field form-control" type="text" id="number" name="age"  placeholder="Your Age" required></div>
+              <input class="input-field form-control" type="text" id="email" name="sex" placeholder="sex " required></div>
+              <div class="validate"></div>
+            </div> -->
+            <div class="col-md-4 form-group mt-3 ">
+              <div class="input-tab">
+              <select name="sex" class="form-control gender" id="email" placeholder="sex" required autofocus  >
+                <option value="" selected>Gender...</option>
+                <option value=1 >Male</option>
+                <option value=0>Female</option>
+              </select></div>
               <div class="validate"></div>
             </div>
 
@@ -135,13 +144,12 @@
           <div class="row">
             <div class="col-md-4 form-group mt-3 ">
               <div class="input-tab">
-              <input class="input-field form-control" type="text" id="name" name="sex" placeholder="sex" required autofocus></div>
+              <input class="input-field form-control" type="text" id="name" name="glucose" placeholder="glucose level" required autofocus></div>
               <div class="validate"></div>
             </div>
-
             <div class="col-md-4 form-group mt-3  ">
               <div class="input-tab">
-              <input class="input-field form-control" type="text" id="email" name="cig" placeholder="cigarettes per day" required></div>
+              <input class="input-field form-control" type="number" id="email" name="cig" placeholder="cigarettes per day" required></div>
               <div class="validate"></div>
             </div>
 
@@ -168,24 +176,43 @@
               <div class="validate"></div>
             </div>
 
-            <div class="col-md-4 form-group mt-3 ">
+            <!-- <div class="col-md-4 form-group mt-3 ">
               <div class="input-tab">
               <input class="input-field form-control" type="text" id="number" name="hyp"  placeholder="Hypertension" required></div>
+              <div class="validate"></div>
+            </div> -->
+
+            <div class="col-md-4 form-group mt-3 ">
+              <div class="input-tab">
+              <select name="hyp" class="form-control gender" id="email" placeholder="Hyp" required autofocus  >
+                <option value="" selected>Hypertension...</option>
+                <option value=1 >Yes</option>
+                <option value=0>No</option>
+              </select></div>
               <div class="validate"></div>
             </div>
 
           </div>
           <div class="row">
-          <div class="col-md-4 form-group mt-3">
-            <div class="input-tab">
-            <input class="input-field form-control" type="text" id="number" name="dia"  placeholder="Diabetes" required></div>
-            <div class="validate"></div>
-          </div>
-          <div class="col-md-4 form-group mt-3 ">
-            <div class="input-tab">
-            <input class="input-field form-control" type="text" id="name" name="bloodpre" placeholder="Blood Pressure" required autofocus></div>
-            <div class="validate"></div>
-          </div>
+            <div class="col-md-4 form-group mt-3 ">
+              <div class="input-tab">
+              <select name="dia" class="form-control gender" id="email" placeholder="Hyp" required autofocus  >
+                <option value="" selected>diabetes...</option>
+                <option value=1 >Yes</option>
+                <option value=0>No</option>
+              </select></div>
+              <div class="validate"></div>
+            </div>
+            <div class="col-md-4 form-group mt-3 ">
+              <div class="input-tab">
+              <select name="bloodpre" class="form-control gender" id="email" placeholder="Hyp" required autofocus  >
+                <option value="" selected>Blood Pressure Mediaction...</option>
+                <option value=1 >Yes</option>
+                <option value=0>No</option>
+              </select></div>
+              <div class="validate"></div>
+            </div>
+        </div>
           
          <!-- <div class="labels">
           <label for="dropdown">Pregnancies</label></div>

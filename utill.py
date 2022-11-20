@@ -74,3 +74,7 @@ def chd_prediction (input_data):
         return "The patient will develop a Heart Disease."
     else:
         return "The patient will not develop a Heart Disease."
+
+
+
+
